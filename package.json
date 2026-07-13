@@ -1,0 +1,40 @@
+{
+  "name": "palengkedle",
+  "version": "1.0.0",
+  "description": "Rene's Costcodle clone that contextualizes it to the Philippine market",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "scrape": "ts-node src/scraper.ts"
+  },
+  "keywords": [
+    "game",
+    "costcodle-clone",
+    "express",
+    "typescript",
+    "web-scraper"
+  ],
+  "author": "Rene Lee Aquitania",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.22.0",
+    "puppeteer": "^25.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.0.0",
+    "@types/pg": "^8.20.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.8.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.4"
+  }
+}
