@@ -31,7 +31,7 @@ export default function App() {
   const GAME_START_DATE = new Date('2026-05-03T00:00:00Z').getTime();
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/daily-product')
+    fetch('https://palengkedle-api.onrender.com/api/daily-product')
       .then((response) => {
         if (!response.ok) throw new Error('Failed to fetch product');
         return response.json();
